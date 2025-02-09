@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ระบบจัดการคลังสินค้า</title>
+    <link rel="stylesheet" href="style.css" />
+    
+    
+
+</head>
+<body>
+    
+    <h2>📦 ระบบจัดการคลังสินค้า</h2>
+
+    <h3>➕ เพิ่มสินค้าใหม่</h3>
+    <input type="text" id="productId" placeholder="รหัสสินค้า">
+    <input type="text" id="productName" placeholder="ชื่อสินค้า">
+    <input type="number" id="productPrice" placeholder="ราคา">
+    <input type="number" id="productStock" placeholder="จำนวนคงเหลือ">
+    <select id="productCategory">
+        <option value="">-- เลือกประเภท --</option>
+        <option value="อาหารและเครื่องดื่ม">อาหารและเครื่องดื่ม</option>
+        <option value="สินค้าอุปโภค">สินค้าอุปโภค</option>
+        <option value="สินค้าสุขภาพและยา">สินค้าสุขภาพและยา</option>
+        <option value="ของใช้เบ็ดเตล็ด">ของใช้เบ็ดเตล็ด</option>
+    </select>
+    
+    <input type="number" id="productMinStock" placeholder="แจ้งเตือนใกล้หมดเมื่อเหลือ...">
+    
+
+    <button class="custom-btn" onclick="addProduct()">เพิ่มสินค้า</button>
+      
+
+      
+    <h3>📋 รายการสินค้า</h3>
+    <table>
+        <thead>
+            <tr>
+                <th>รหัส</th>
+                <th>ชื่อ</th>
+                <th>ราคา</th>
+                <th>คงเหลือ</th>
+                <th>ประเภท</th>
+                <th>แจ้งเตือน</th>
+                <th>อัปเดตสต็อก</th>
+                <th>จัดการ</th>
+            </tr>
+        </thead>
+        <tbody id="productTable"></tbody>
+    </table>
+
+    <h3>📊 รายงานยอดขาย</h3>
+    <button onclick="generateSalesReport()">สร้างรายงาน</button>
+    <pre id="salesReport"></pre>
+
+    <script src="script.js"></script>
+    
+
+    
+
+</body>
+</html>

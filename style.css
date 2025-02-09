@@ -1,0 +1,63 @@
+body { 
+    font-family: Arial, sans-serif; margin: 20px; 
+}
+
+h2 { 
+    color: #333; 
+}
+
+input, select, button { 
+    margin: 5px 0; padding: 10px; border: 1px solid black;
+}
+         
+table { 
+    width: 100%; border-collapse: collapse; margin-top: 10px; 
+}
+
+th, td { 
+    border: 1px solid #777777; padding: 8px; text-align: center; 
+}
+
+th { 
+    background-color: #c4c4c4; 
+}
+
+
+  .custom-btn {
+    background-color: #007bff; /* สีน้ำเงิน */
+    color: white; /* สีตัวอักษร */
+    font-size: 16px;
+    font-weight: bold;
+    padding: 8px 16px;
+    border: 2px solid black; /* ขอบสีดำ */
+    
+    
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* ทำให้เปลี่ยนสีเนียนขึ้น */
+  }
+
+  .custom-btn:hover {
+    background-color: #0056b3; /* ปุ่มเพิ่มสินค้า เป็นสีน้ำเงินเข้มเมื่อชี้เมาส์ */
+    
+  }
+  .cus-btn:hover {
+    background-color: #aaaaaa; /* ปุ่ม +1 กับ -1 */
+    
+  }
+  .cus-button_edit:hover {
+    background-color: #ffe386; /* ปุ่ม แก้ไข */
+    
+  }
+  .cus-button_delete:hover { /* ปุ่มลบ */
+    background-color: #ff7e7e; 
+    
+  }
+  .cus-button_sell { /* ปุ่มขาย */
+    background-color: #56ff64; 
+    
+  }
+  .cus-button_sell:hover { 
+    background-color: #22c02f; 
+    
+  }
+
